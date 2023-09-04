@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jackpotspark-371cc": {
+      "hosting": {
+        "Angular-Boilerplate": [
+          "jackpotspark-371cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jackpotspark-371cc"
+  }
+}
