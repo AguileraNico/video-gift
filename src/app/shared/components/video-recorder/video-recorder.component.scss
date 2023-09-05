@@ -1,0 +1,33 @@
+/* Estilo para el contenedor principal */
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50vh; /* Ajusta la altura según tus necesidades */
+	font-family: Arial, sans-serif;
+}
+
+/* Estilo para el video */
+video {
+	max-width: 100%;
+	border: 1px solid #ccc;
+}
+
+/* Estilo para los botones */
+button {
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}

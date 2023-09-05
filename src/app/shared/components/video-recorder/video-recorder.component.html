@@ -1,0 +1,14 @@
+<div>
+	<video *ngIf="!recorded" #videoElement autoplay playsinline>
+        <ng-container></ng-container>
+    </video>
+    <video *ngIf="recorded" controls>
+        <source [src]="newMediaStream" type="video/webm" />
+    </video>
+</div>
+
+<div>
+	<button (click)="startRecording()">Iniciar Grabación</button>
+	<button (click)="stopRecording()">Detener Grabación</button>
+	<button (click)="uploadRecording()">Subir video</button>
+</div>

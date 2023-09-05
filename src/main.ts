@@ -8,6 +8,7 @@ import { importProvidersFrom } from "@angular/core";
 import { provideFirebaseApp, initializeApp } from "@angular/fire/app";
 import { environment } from "./environments/environment.development";
 import { provideAuth, getAuth } from "@angular/fire/auth";
+import { provideStorage, getStorage } from "@angular/fire/storage";
 
 
 bootstrapApplication(AppComponent, {
@@ -16,6 +17,7 @@ bootstrapApplication(AppComponent, {
         importProvidersFrom(
           provideFirebaseApp(() => initializeApp(environment.firebase)),
           provideAuth(() => getAuth()),
+          provideStorage(() => getStorage())
         ),
     ]
 });
